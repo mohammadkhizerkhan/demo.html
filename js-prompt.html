@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js window confirm</title>
+    <script>
+        function showpromptbox(){
+            var getvalue=window.prompt("enter your age","ex 18")
+                if(getvalue==null||getvalue==""){
+                    alert("please enter your age");
+                }else{
+                    if(getvalue<18){
+                        alert("not adult");
+                    }else{
+                        alert("adult")
+                    }
+                } 
+        }
+    </script>
+</head>
+<body>
+    <h1>java script window.confirm() example</h1>
+    <input type="button" onclick="showpromptbox();" value="confirm prompt ">
+</body>
+</html>

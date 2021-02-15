@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js window confirm</title>
+    <script>
+        function showconfirmbox(){
+            var status=window.confirm("fo you really want to delete this file?")
+            if(status){
+                alert("ok button pressed");
+            }else{
+                alert("cancle button is pressed")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>java script window.confirm() example</h1>
+    <input type="button" onclick="showconfirmbox();" value="confirm page ">
+</body>
+</html>

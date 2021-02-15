@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js window confirm</title>
+    <script>
+        function showpromptbox(){
+            var age=document.getElementById("enter your age").value;
+               if(age<18){
+                   alert("not adult")
+               }else{
+                   alert("adult")
+               }
+               function checkuserageternarymethod(){
+                   var age=document.getElementById("user agr").value;
+                   var result=(age<18)?"adult":"not adult"
+               }
+        }
+    </script>
+</head>
+<body>
+    <h1>java script window.confirm() example</h1>
+    <input type="text">
+    <input type="button" onclick="sgetuserage();" value="confirm prompt ">
+    <input type="button" onclick="checkuserageternarymethod();" value="confirm prompt ">
+</body>
+</html>

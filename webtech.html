@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webtech example</title>
+</head>
+<body>
+
+    <!-- first way
+
+    <form action="">
+        <input type="text" name="turntem" value="turnitem" >
+    </form>
+    <script>
+        var dom=document.forms[0].elements[0]
+        alert(dom)
+        // alert(dom.value)
+    </script> -->
+
+    <!-- second way -->
+
+    <!-- <form name="myform" action="">
+        <input type="text" name="turnitem" value="turnitem">
+    </form>
+    <script>
+        var dom=document.myform.turnitem
+        alert(dom.value)
+        // alert(dom)
+    </script> -->
+
+    <!-- third way -->
+<!-- 
+    <form name="myform" id="turnitem">
+        <input type="text" name="turnitem" id="turnitem" value="vishal">
+    </form>
+    <script>
+        var dom=document.getElementById("turnitem")
+        // alert(dom.value)
+        alert(dom)
+    </script> -->
+
+    <!-- forth way -->
+
+    <!-- <form action="" id="VehicleGroup">
+        car
+        <input type="checkbox" name="vehicles" value="car" checked="checked">
+        motor
+        <input type="checkbox" name="vehicles" value="motor" checked="checked">
+        bike
+        <input type="checkbox" name="vehicles" value="bike" checked="checked">
+    </form>
+    <script>
+        var numchecked=0;
+        var dom=document.getElementById("VehicleGroup")
+        for(index=0;index<dom.vehicles.length;index++){
+            if(dom.vehicles[index].checked){
+                numchecked++;
+            }
+            alert(numchecked)
+        }
+    </script> -->
+
+    <!-- event handling -->
+
+    <!-- <input type="button"  id="mybutton" onclick="alert('u pressed this button')"> -->
+    <input type="button"  id="mybutton" onclick="myButtonHandler();">
+</body>
+</html> -->
