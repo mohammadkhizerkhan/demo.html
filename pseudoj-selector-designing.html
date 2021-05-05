@@ -10,11 +10,11 @@
             border: rgb(94, 69, 36) solid 3px;
             padding: 114px;
             margin: 114px;
-            width: 500px;
+            width: 200px;
         }
         .btn{
             background-color: crimson;
-            padding: 4px;
+            padding: 6px;
             border: none;
             cursor: pointer;
             font-size: 15px;
@@ -22,18 +22,34 @@
         }
         a{
             text-decoration: none;
+            color: black;
         }
-        a:hover{
+
+        /* pseudo-selectors means HOVERS and VISITED */
+
+
+
+        /* a:hover{
             color: burlywood;
             background-color: cadetblue;
-        }
+        } */
+
+        /* after visiting link it will change color */
+
         a:visited{
-            color: darkgoldenrod;
+            color: rgb(67, 138, 9);
 
         }
+
+        .btn:active{
+            color: blueviolet;
+            background-color: rgb(17, 17, 17);
+        }
+
+
         .btn:hover{
-            color: rgb(8, 8, 8);
-            background-color: rgb(202, 116, 116);
+            color: rgb(240, 1, 1);
+            background-color: rgb(233, 164, 229);
         }
     </style>
 </head>

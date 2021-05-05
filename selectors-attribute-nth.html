@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth pseudo selectors</title>
+    <style>
+        input[type='text']{
+            border: 2px solid red;
+        }
+
+        a[target]{
+            color: red;
+        }
+
+
+        a[target='_self']{
+            color: rgb(7, 6, 6);
+        }
+    
+        
+        /* affect on every even li  */
+        /* li:nth-child(2n+0){
+            color: rgb(245, 115, 8);
+            font-weight: bold;
+        } */
+
+
+        /* this will also work for even */
+        li:nth-child(even){
+            color: rgb(38, 99, 3);
+            font-weight: bold;
+        }
+
+        /* work for odd */
+        li:nth-child(odd){
+            color: rgb(240, 204, 4);
+            font-weight: bold;
+        }
+
+
+        /* affect on 3rd child */
+        li:nth-child(3){
+            color: rgb(51, 8, 245);
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <a href="http://google.com" target="_blank" rel="noopener noreferrer">go to google</a>
+        </h1>
+        <h1>
+            <a href="http://facebook.com" target="_self" rel="noopener noreferrer">go to facebook</a>
+        </h1>
+        <form action="" class="form-class">
+            <input type="text" name="" id="" placeholder="enter your name">
+            <input type="password" name="" placeholder="enter your password" id="">
+            <input type="submit" value="submit">
+        </form>
+         <ul>
+             <li class="item" id="item-1">item1</li>
+             <li class="item" id="item-2">item2</li>
+             <li class="item" id="item-3">item3</li>
+             <li class="item" id="item-4">item4</li>
+             <li class="item" id="li-1">kfff</li>
+             <li class="item" id="li-2">fffd</li>
+             <li class="item" id="li-3">dfdf</li>
+             <li class="item" id="li-4">asdg</li>
+         </ul>
+    </div>
+</body>
+</html>
