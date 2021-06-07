@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box  shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .head{
+            
+            padding: 23px 33px;
+            margin: 4px 9px;
+            background-color: silver;
+            /* box-shadow: y-offset x-offset blur-radius spread-radius; 
+            offsets can be negative then it will affect at opposite side*/
+            box-shadow:3px 3px 4px 2px black;
+        }
+        .container h1{
+            text-shadow: 3px 3px 4px rgb(126, 122, 122);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head" id="head-1"><h1>header1</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque natus reprehenderit molestiae, neque quaerat voluptatum necessitatibus eos nesciunt impedit quae iure quidem at voluptatibus dolores quo fugiat sapiente quisquam?</p></div>
+
+        <div class="head" id="head-2"><h1>header2</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque natus reprehenderit molestiae, neque quaerat voluptatum necessitatibus eos nesciunt impedit quae iure quidem at voluptatibus dolores quo fugiat sapiente quisquam?</p></div>
+
+        <div class="head" id="head-3"><h1>header3</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque natus reprehenderit molestiae, neque quaerat voluptatum necessitatibus eos nesciunt impedit quae iure quidem at voluptatibus dolores quo fugiat sapiente quisquam?</p></div>
+        
+        <div class="head" id="head-4"><h1>header4</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque natus reprehenderit molestiae, neque quaerat voluptatum necessitatibus eos nesciunt impedit quae iure quidem at voluptatibus dolores quo fugiat sapiente quisquam?</p></div>
+    </div>
+    
+</body>
+</html>

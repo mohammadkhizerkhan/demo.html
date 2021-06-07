@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* this will affect to the li para also */
+        /* div p{
+            color: blueviolet;
+            background-color: cornsilk;
+        } */
+
+        /* if we want specific */
+        /* div li p{
+            color: rgb(12, 216, 131);
+            background-color: rgb(10, 10, 10);
+        } */
+
+
+        /* this is will affect to only direct child of div */
+        /* div > p{
+            color: rgb(12, 216, 131);
+            background-color: rgb(28, 180, 218);
+        } */
+        
+
+        /* if p is right after div */
+        div + p{
+            color: rgb(250, 33, 33);
+            background-color: rgb(12, 17, 19);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>this is tezt</h1>
+    <div class="head">
+        <div class="head2">
+            <p>this is div-para1</p>
+            <ul>
+                <li class="item">
+                    <p>this is li-para</p>
+                </li>
+            </ul>
+
+        </div>
+        <p>
+            this is div-para1 after div
+        </p>
+    </div>
+    <p>this para2 is before after div</p>
+</body>
+</html>

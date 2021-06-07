@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>visibility and z-index</title>
     <style>
-        .box{
+        .box {
             width: 200px;
             height: 200px;
             border: 2px solid black;
             margin: 4px;
         }
-        #box1{top: 40px;
-        z-index: 55;
-            position: relative; background-color: green;}
-        #box2{ position: relative; 
-        top: 4px;
-        z-index: 40;
-        /* z-index only work on position relative,absolute fixed or stick */
-            /* visibility: hidden;it will hide the element */
-            /* display: none;it will hide the elbement and space */
-             background-color: rgb(8, 11, 179);
-             }
-        #box3{background-color: rgb(207, 36, 102);}
-        #box4{background-color: rgb(21, 221, 188);}
+
+        #box1 {
+            top: 40px;
+            z-index: 55;
+            position: relative;
+            background-color: green;
+        }
+
+        #box2 {
+            position: relative;
+            top: 4px;
+            z-index: 40;
+            /* static is the default positon */
+            /* z-index only work on position relative,absolute fixed or stick */
+
+            /* it will hide the element */
+            visibility: hidden;
+
+            /* it will hide the elbement and space */
+            display: none;
+
+            background-color: rgb(8, 11, 179);
+        }
+
+        #box3 {
+            background-color: rgb(207, 36, 102);
+        }
+
+        #box4 {
+            background-color: rgb(21, 221, 188);
+        }
     </style>
 </head>
+
 <body>
     <div class="box" id="box1"></div>
     <div class="box" id="box2"></div>
     <div class="box" id="box3"></div>
     <div class="box" id="box4"></div>
 </body>
+
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+</head>
+<body>
+    <form action="" method="GET">
+        <textarea name="text" id="encrypt" cols="30" rows="10"></textarea>
+        <br>
+        <label for="shifts">shifts</label>
+        <select name="shift" id="shifts">
+            <option id="shift-no" value="1">1</option>
+            <option id="shift-no" value="2">2</option>
+            <option id="shift-no" value="3">3</option>
+            <option id="shift-no" value="4">4</option>
+            <option id="shift-no" value="5">5</option>
+            <option id="shift-no" value="6">6</option>
+            <option id="shift-no" value="7">7</option>
+            <option id="shift-no" value="8">8</option>
+        </select>
+        <br>
+        <input type="submit" value="submit" onclick="encrypting(text,s)">
+        <br>
+        <textarea name="text" id="decrypt" cols="30" rows="10"></textarea>
+    </form>   
+    <script>
+        //A Javascript Program to illustrate Caesar Cipher Technique
+            
+            // Encrypts text using a shift od s
+            function encrypting(text, s)
+            {
+                var text=document.getElementById("encrypt").value;
+                var s=document.getElementById("shift-no").value;
+                // var syntax = esprima.parse(text);
+                let result=""
+                for (let i = 0; i < text.length; i++)
+                {
+                    let char = text[i];
+                    if (char.toUpperCase(text[i]))
+                    {
+                        let ch = String.fromCharCode((char.charCodeAt() + s));
+                        result += ch;
+                    }
+                    else if(char.toLowerCase(text[i]))
+                    {
+                        let ch = String.fromCharCode((char.charCodeAt() + s));
+                        result += ch;
+                    }
+                }
+                document.getElementById('decrypt').value = "" + result;
+
+                return result;
+            }
+    </script> 
+</body>
+</html>

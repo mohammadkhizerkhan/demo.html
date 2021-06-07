@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>allignment</title>
     <style>
-        *{
-
+        * {
+            box-sizing: border-box;
         }
-        .container{
+
+        .container {
             width: 1000px;
             border: 3px solid rgb(171, 235, 187);
             margin: auto;
 
         }
-        .item{
+
+        .item {
             border: 3px solid rebeccapurple;
-            margin: 12px 13px;
-            padding: 15px 15px;
+            margin: 20px 13px;
+            padding: 30px 35px;
             background: rgb(187, 164, 211);
         }
-        #fruits{
+
+        #fruits {
             float: left;
-                width: 50%;
+            width: 50%;
         }
-        #computer{
-            float: left;
-                width:50%px;
+
+        #computer {
+            float: right;
+            width: 50%;
         }
-        #stationary{
-            clear: left;
+
+        #stationary {
+            /* cleae left means no float which is having left should interfear */
+            clear: both;
             /* float: left; */
-                width: 48%;
+            width: 50%;
         }
-        p,h1{
-            text-align:inherit;
+
+        p,
+        h1 {
+            text-align: inherit;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div id="fruits" class="item">
-            <h1>fruits</h1>
-            <p class="para" id="fruitspara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste, aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem adipisci, tenetur architecto delectus aut laborum placeat soluta.</p>
+            <h3>fruits</h3>
+            <p class="para" id="fruitspara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste,
+                aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem adipisci,
+                tenetur architecto delectus aut laborum placeat soluta.</p>
         </div>
         <div id="computer" class="item">
-            <h3>fruits</h3>
-            <p class="para" id="fruitcomputerpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste, aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem adipisci, tenetur architecto delectus aut laborum placeat soluta.</p>
+            <h3>computer</h3>
+            <p class="para" id="fruitcomputerpara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+                iste, aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem
+                adipisci, tenetur architecto delectus aut laborum placeat soluta.</p>
         </div>
         <div id="stationary" class="item">
-            <h3>fruits</h3>
-            <p class="para" id="stationarypara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste, aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem adipisci, tenetur architecto delectus aut laborum placeat soluta.</p>
+            <h3>stationary</h3>
+            <p class="para" id="stationarypara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+                iste, aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem
+                adipisci, tenetur architecto delectus aut laborum placeat soluta.</p>
         </div>
         <div id="glass" class="item">
-            <h3>fruits</h3>
-            <p class="para" id="glasspara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste, aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem adipisci, tenetur architecto delectus aut laborum placeat soluta.</p>
+            <h3>glass</h3>
+            <p class="para" id="glasspara">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum iste,
+                aperiam aliquid pariatur consectetur dolor neque quaerat consequatur doloribus est ex quidem adipisci,
+                tenetur architecto delectus aut laborum placeat soluta.</p>
         </div>
     </div>
 </body>
+
 </html>

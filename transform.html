@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .cont{
+            background-color: silver;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        .box{
+            background-color: rebeccapurple;
+            width: 120px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s  0.5s;
+
+        }
+        .box:hover{
+            /* transform: rotate(45deg); */
+            /* transform:skew(45deg); */
+            /* transform:scale(2); */
+            transform: translate3d(122px,122px,123px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            text
+        </div>
+    </div>
+    
+</body>
+</html>

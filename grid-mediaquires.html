@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-row-gap</title>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid-mediaquires</title>
+        <style>
+            .container {
+                display: grid;
+                grid-gap: 2rem;
+                grid-template-areas:
+                    'nav nav nav nav'
+                    'section section section aside'
+                    /* 'aside aside aside aside' */
+                    'footer footer footer footer';
+            }
+
+            @media(max-width:300px) {
+                body {
+                    background-color: hotpink;
+                }
+                .container {
+                    grid-template-areas:
+                        'nav nav nav nav'
+                        'section section section section'
+                        'aside aside aside aside'
+                        'footer footer footer footer';
+                }
+            }
+
+            @media (min-width:300px) and (max-width:500px) {
+                body {
+                    background-color: rgb(61, 13, 235);
+                }
+
+                .container {
+                    grid-template-areas:
+                        'nav nav nav nav'
+                        'section section section section'
+                        'aside aside aside aside'
+                        'footer footer footer footer';
+                }
+            }
+
+            @media (min-width:500px) and (max-width:800px) {
+                body {
+                    background-color: rgb(83, 24, 1);
+
+                }
+            }
+
+            @media (min-width:800px) {
+                body {
+                    background-color: rgb(24, 190, 80);
+                }
+            }
+
+
+            .border {
+                border: 2px solid black;
+                background-color: blanchedalmond;
+                padding: 23px;
+            }
+
+            nav {
+                grid-area: nav;
+            }
+
+            section {
+                grid-area: section;
+            }
+
+            aside {
+                grid-area: aside;
+            }
+
+            footer {
+                grid-area: footer;
+                text-align: center;
+            }
+        </style>
+
+    </head>
+
+<body>
+    <div class="container">
+        <nav class="border">home about contact</nav>
+        <section class="border">
+            <h2>welcome world</h2>
+        </section>
+        <aside class="border">
+            <h1>welcome to programmin</h1>
+        </aside>
+        <footer class="border">this is khizer khan</footer>
+
+    </div>
+</body>
+
+</html>
